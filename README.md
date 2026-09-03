@@ -80,3 +80,5 @@ Curso: Sistemas de Informação
 Instituição: Universidade Presbiteriana Mackenzie
 Projeto: Lagarta - Projeto Extensionista
 Ano: 2026
+Link GitHub:https://miniature-goggles-x554pg7qj97rf6qj.github.dev/
+
