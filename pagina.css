@@ -1,6 +1,6 @@
 body {
     background-color: white;
-    color: #111111;
+    color: var(--cor-principal);
     font-family: Arial;
     margin: 0;
 }
@@ -96,7 +96,7 @@ button {
 .card2,
 .card3,
 .card4 {
-    background-color: gray;
+    background-color: #f1f5f9;
     width: 200px;
     padding: 20px;
     border: 1px solid #dddddd;
@@ -141,11 +141,11 @@ button {
 }
 
 .Emergencia {
-    color: red;
+    color: white;
+    background-color: red;
     text-align: center;
     padding: 20px;
     border: 1px solid black;
-    border-radius: 20px;
     }
 
 .copyright {
