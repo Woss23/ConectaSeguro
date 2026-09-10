@@ -1,0 +1,159 @@
+body {
+    background-color: white;
+    color: #111111;
+    font-family: Arial;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #111111;
+}
+
+.menu p {
+    color: red;
+    font-size: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.Educacao {
+    color: red;
+    text-align: center;
+    margin: 30px;
+}
+
+.SLOGAN {
+    text-align: center;
+    margin: 30px;
+}
+
+.SLOGAN h1 {
+    font-size: 35px;
+}
+
+.SLOGAN h2 {
+    font-size: 18px;
+    color: gray;
+}
+
+.button,
+.button2 {
+    text-align: center;
+    margin: 15px;
+}
+
+button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+#Quadrados {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 40px;
+}
+
+#Quadrados article {
+    background-color: #111111;
+    color: white;
+    padding: 20px;
+    width: 200px;
+}
+
+#Quadrados h2 {
+    color: red;
+}
+
+.PorOnde {
+    text-align: center;
+    margin: 40px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    margin: 30px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+    background-color: gray;
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+.cards a {
+    color: red;
+    text-decoration: none;
+}
+
+.Quiz {
+    text-align: center;
+    background-color: #111111;
+    color: white;
+    margin: 40px;
+    padding: 30px;
+}
+
+.Quiz a {
+    color: red;
+    text-decoration: none;
+}
+
+.final {
+    display: flex;
+    justify-content: space-around;
+    background-color: #111111;
+    color: white;
+    padding: 30px;
+}
+
+.final1,
+.final2,
+.final3 {
+    width: 250px;
+}
+
+.final a {
+    color: red;
+    text-decoration: none;
+}
+
+.Emergencia {
+    color: red;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    }
+
+.copyright {
+    background-color: #111;
+    color: white;
+    border-top: 1px solid #555;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    font-size: 13px;
+}
