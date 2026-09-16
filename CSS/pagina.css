@@ -1,0 +1,106 @@
+body {
+    background-color: #ffffff;
+    color: #14213d;
+}
+
+
+.Educacao {
+    color: #2563eb;
+    text-align: center;
+    margin: 30px;
+}
+
+.SLOGAN {
+    text-align: center;
+    margin: 30px;
+}
+
+.SLOGAN h1 {
+    font-size: 35px;
+}
+
+.SLOGAN h2 {
+    font-size: 18px;
+    color: #64748b;
+}
+
+
+.button,
+.button2 {
+    text-align: center;
+    margin: 15px;
+}
+
+button {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+#Quadrados {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 40px;
+}
+
+#Quadrados article {
+    background-color: #14213d;
+    color: #ffffff;
+    padding: 20px;
+    width: 200px;
+}
+
+#Quadrados h2 {
+    color: #2563eb;
+}
+
+.PorOnde {
+    text-align: center;
+    margin: 40px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    margin: 30px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+    background-color: #eff6ff;
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #bfdbfe;
+    border-radius: 10px;
+}
+
+.cards a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+
+.Quiz {
+    text-align: center;
+    background-color: #14213d;
+    color: #ffffff;
+    margin: 40px;
+    padding: 30px;
+}
+
+.Quiz a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+
+.Emergencia {
+    background-color: #d90000;
+    color: white;
+}

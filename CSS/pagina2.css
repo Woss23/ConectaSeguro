@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #14213d;
+}
+
+main {
+    padding: 40px;
+}
+
+.teste-senha {
+    border: 2px solid #14213d;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.teste-senha h2 {
+    color: #2563eb;
+}
+
+.teste-senha strong {
+    color: #2563eb;
+}
+
+.teste-senha label {
+    font-weight: bold;
+}
+
+.teste-senha input {
+    margin-top: 10px;
+    width: 300px;
+    padding: 12px;
+    border: 1px solid #14213d;
+    border-radius: 5px;
+}
+
+.exemplos {
+    padding: 25px;
+}
+
+.exemplos h2 {
+    color: #2563eb;
+}
+
+.exemplos article {
+    border: 1px solid #bfdbfe;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #eff6ff;
+}
+
+.exemplos h3 {
+    color: #2563eb;
+}
