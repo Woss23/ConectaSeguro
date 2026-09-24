@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>ConectaSeguro</title>
+
     <link rel="stylesheet" href="/CSS/global.css">
     <link rel="stylesheet" href="/CSS/pagina3.css">
+
+    <script src="/JS/pagina3.js" defer></script>
 </head>
 
 <body>
@@ -13,6 +16,7 @@
     <header>
         <nav class="menu">
             <p>ConectaSeguro</p>
+
             <a href="/HTML/pagina.html">Início</a>
             <a href="/HTML/pagina1.html">Golpes Comuns</a>
             <a href="/HTML/pagina2.html">Senhas Seguras</a>
@@ -20,23 +24,127 @@
             <a href="/HTML/pagina4.html">O que fazer?</a>
         </nav>
     </header>
-     <main class="conteudo">
+
+
+    <main class="conteudo">
 
         <p class="titulo-quiz">Quiz de Segurança Digital</p>
 
-        <h1 class="pergunta-numero">Pergunta 1 de 8</h1>
+
+        <!-- PERGUNTA 1 -->
+
+        <h1 class="pergunta-numero">Pergunta 1 de 4</h1>
 
         <div class="barra"></div>
 
         <section class="caixa-quiz">
 
             <h2 class="pergunta">
-                Você recebe uma mensagem do "Banco do Brasil"
-                pedindo sua senha por WhatsApp. O que você faz?
+                Qual dessas senhas é mais segura?
             </h2>
 
             <div class="alternativa">
-                <input type="radio" name="resposta">
+                <input type="radio" name="pergunta1" value="A">
+                <label>
+                    <span class="letra">A</span>
+                    Maria1990
+                </label>
+            </div>
+
+            <div class="alternativa">
+                <input type="radio" name="pergunta1" value="B">
+                <label>
+                    <span class="letra">B</span>
+                    123456789
+                </label>
+            </div>
+
+            <div class="alternativa">
+                <input type="radio" name="pergunta1" value="C">
+                <label>
+                    <span class="letra">C</span>
+                    p@ssw0rd
+                </label>
+            </div>
+
+            <div class="alternativa">
+                <input type="radio" name="pergunta1" value="D">
+                <label>
+                    <span class="letra">D</span>
+                    mk#9xl!2kr
+                </label>
+            </div>
+
+            <button class="botao">Confirmar resposta</button>
+
+        </section>
+
+
+        <!-- PERGUNTA 2 -->
+
+        <h1 class="pergunta-numero">Pergunta 2 de 4</h1>
+
+        <div class="barra"></div>
+
+        <section class="caixa-quiz">
+
+            <h2 class="pergunta">
+                Alguém no WhatsApp diz ser seu filho e pede R$500 de PIX
+                urgente pois está em emergência. Você deve:
+            </h2>
+
+            <div class="alternativa">
+                <input type="radio" name="pergunta2" value="A">
+                <label>
+                    <span class="letra">A</span>
+                    Fazer um Pix imediatamente, é uma emergência!
+                </label>
+            </div>
+
+            <div class="alternativa">
+                <input type="radio" name="pergunta2" value="B">
+                <label>
+                    <span class="letra">B</span>
+                    Ligar para o número antigo do filho para confirmar
+                </label>
+            </div>
+
+            <div class="alternativa">
+                <input type="radio" name="pergunta2" value="C">
+                <label>
+                    <span class="letra">C</span>
+                    Perguntar mais detalhes para o WhatsApp antes de enviar
+                </label>
+            </div>
+
+            <div class="alternativa">
+                <input type="radio" name="pergunta2" value="D">
+                <label>
+                    <span class="letra">D</span>
+                    Ignorar, filhos não pedem dinheiro assim
+                </label>
+            </div>
+
+            <button class="botao">Confirmar resposta</button>
+
+        </section>
+
+
+        <!-- PERGUNTA 3 -->
+
+        <h1 class="pergunta-numero">Pergunta 3 de 4</h1>
+
+        <div class="barra"></div>
+
+        <section class="caixa-quiz">
+
+            <h2 class="pergunta">
+                Você recebe uma mensagem do "Banco do Brasil" pedindo
+                sua senha por WhatsApp. O que você faz?
+            </h2>
+
+            <div class="alternativa">
+                <input type="radio" name="pergunta3" value="A">
                 <label>
                     <span class="letra">A</span>
                     Respondo com minha senha, pois parece urgente
@@ -44,7 +152,7 @@
             </div>
 
             <div class="alternativa">
-                <input type="radio" name="resposta">
+                <input type="radio" name="pergunta3" value="B">
                 <label>
                     <span class="letra">B</span>
                     Ignoro ou ligo para o banco no número oficial
@@ -52,7 +160,7 @@
             </div>
 
             <div class="alternativa">
-                <input type="radio" name="resposta">
+                <input type="radio" name="pergunta3" value="C">
                 <label>
                     <span class="letra">C</span>
                     Encaminho para um amigo decidir
@@ -60,10 +168,60 @@
             </div>
 
             <div class="alternativa">
-                <input type="radio" name="resposta">
+                <input type="radio" name="pergunta3" value="D">
                 <label>
                     <span class="letra">D</span>
-                    Clico no link que veio junto na mensagem
+                    Clico no link que veio junto à mensagem
+                </label>
+            </div>
+
+            <button class="botao">Confirmar resposta</button>
+
+        </section>
+
+
+        <!-- PERGUNTA 4 -->
+
+        <h1 class="pergunta-numero">Pergunta 4 de 4</h1>
+
+        <div class="barra"></div>
+
+        <section class="caixa-quiz">
+
+            <h2 class="pergunta">
+                Você recebe um SMS: "Seu CPF foi usado para fraude.
+                Clique aqui para regularizar". O que fazer?
+            </h2>
+
+            <div class="alternativa">
+                <input type="radio" name="pergunta4" value="A">
+                <label>
+                    <span class="letra">A</span>
+                    Clicar no link e verificar
+                </label>
+            </div>
+
+            <div class="alternativa">
+                <input type="radio" name="pergunta4" value="B">
+                <label>
+                    <span class="letra">B</span>
+                    Encaminhar para amigos como alerta
+                </label>
+            </div>
+
+            <div class="alternativa">
+                <input type="radio" name="pergunta4" value="C">
+                <label>
+                    <span class="letra">C</span>
+                    Apagar a mensagem e ignorar
+                </label>
+            </div>
+
+            <div class="alternativa">
+                <input type="radio" name="pergunta4" value="D">
+                <label>
+                    <span class="letra">D</span>
+                    Ligar para o 0800 que aparece na mensagem
                 </label>
             </div>
 
@@ -73,100 +231,11 @@
 
     </main>
 
-    <h2 class="pergunta">
-                Você recebe uma mensagem do "Banco do Brasil"
-                pedindo sua senha por WhatsApp. O que você faz?
-            </h2>
 
-            <div class="alternativa">
-                <input type="radio" name="resposta">
-                <label>
-                    <span class="letra">A</span>
-                    Respondo com minha senha, pois parece urgente
-                </label>
-            </div>
+    <!-- PARTE FINAL DA PÁGINA -->
 
-            <div class="alternativa">
-                <input type="radio" name="resposta">
-                <label>
-                    <span class="letra">B</span>
-                    Ignoro ou ligo para o banco no número oficial
-                </label>
-            </div>
-
-            <div class="alternativa">
-                <input type="radio" name="resposta">
-                <label>
-                    <span class="letra">C</span>
-                    Encaminho para um amigo decidir
-                </label>
-            </div>
-
-            <div class="alternativa">
-                <input type="radio" name="resposta">
-                <label>
-                    <span class="letra">D</span>
-                    Clico no link que veio junto na mensagem
-                </label>
-            </div>
-
-            <button class="botao">Confirmar resposta</button>
-
-        </section>
-
-    </main>
-
-</body>
-
-</html>
     <section class="final">
-
-        <article class="final1">
-            <h2>ConectaSeguro</h2>
-
-            <p>
-                Educação digital para todos.
-                Aprenda a se proteger e use a internet
-                com mais confiança.
-            </p>
-        </article>
-
-
-        <article class="final2">
-
-            <h2>Páginas</h2>
-
-            <p>
-                <a href="pagina1.html">Golpes Comuns</a>
-            </p>
-
-            <p>
-                <a href="pagina2.html">Senhas Seguras</a>
-            </p>
-
-            <p>
-                <a href="pagina3.html">Quiz de Segurança</a>
-            </p>
-
-            <p>
-                <a href="pagina4.html">O que fazer?</a>
-            </p>
-
-        </article>
-
-
-        <article class="final3">
-
-            <h2>Precisa de ajuda?</h2>
-
-            <p>
-                Em caso de golpe, entre em contato com sua
-                operadora, banco ou a delegacia mais próxima.
-                Não espere, aja rápido!
-            </p>
-
-        </article>
-
+        <!-- Seu conteúdo final aqui -->
     </section>
 
 
@@ -174,11 +243,12 @@
         Emergência 190
     </section>
 
+
     <p class="copyright">
-    © 2026 ConectaSeguro — Projeto educacional de segurança digital.
-    Não somos banco nem órgão governamental.
-</p>
-    
+        © 2026 ConectaSeguro — Projeto educacional de segurança digital.
+        Não somos banco nem órgão governamental.
+    </p>
+
 
 </body>
 

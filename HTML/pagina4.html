@@ -1,351 +1,274 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../CSS/global.css">
-    <link rel="stylesheet" href="../CSS/pagina4.css">
-
+    <link rel="stylesheet" href="pagina4.css">
+    <script src="pagina4.js" defer></script>
     <title>ConectaSeguro - O que fazer</title>
 </head>
-
-<body>
-
+<body id="corpo-pagina" class="todo-site">
     <header>
-        <nav class="menu">
+        <nav class="menu" aria-label="Menu principal">
             <p>ConectaSeguro</p>
-
-            <a href="pagina.html">Início</a>
-            <a href="pagina1.html">Golpes Comuns</a>
-            <a href="pagina2.html">Senhas Seguras</a>
-            <a href="pagina3.html">Quiz</a>
-            <a href="pagina4.html">O que fazer?</a>
+            <ul>
+                <li><a href="pagina.html">Início</a></li>
+                <li><a href="pagina1.html">Golpes Comuns</a></li>
+                <li><a href="pagina2.html">Senhas Seguras</a></li>
+                <li><a href="pagina3.html">Quiz</a></li>
+                <li><a href="pagina4.html" aria-current="page">O que fazer?</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main class="conteudo-da-pagina">
-
-        <div class="faixa-comentario">
-            <p class="mensagem-alerta">Orientações de Emergência</p>
+    <main id="conteudo" class="conteudo-da-pagina">
+        <div id="faixa-alerta" class="faixa-comentario" role="alert">
+            <p id="texto-alerta" class="mensagem-alerta">Orientações de Emergência</p>
         </div>
 
-        <section class="primeiro-destaque">
-
-            <h1 class="titulo-primario">
-                O que fazer se você foi enganado?
-            </h1>
-
-            <p class="texto-primario">
-                Não entre em pânico. Siga estes passos com calma — agir rápido faz toda a diferença.
-            </p>
-
-            <div class="chamada-urgente">
-
-                <h3 class="titulo-chamada">
-                    Velocidade é essencial!
-                </h3>
-
-                <p class="texto-chamada">
-                    Quanto mais rápido você agir, maiores são as chances de minimizar os danos e recuperar seu dinheiro. Comece pelo passo 1 imediatamente.
-                </p>
-
+        <section id="secao-destaque" class="primeiro-destaque">
+            <h1 id="titulo-principal" class="titulo-primario">O que fazer se você foi enganado?</h1>
+            <p id="descricao-destaque" class="texto-primario">Não entre em pânico. Siga estes passos com calma — agir rápido faz toda a diferença.</p>
+            <div id="aviso-velocidade" class="chamada-urgente">
+                <h3 id="titulo-aviso" class="titulo-chamada">Velocidade é essencial!</h3>
+                <p id="corpo-aviso" class="texto-chamada">Quanto mais rápido você agir, maiores são as chances de minimizar os danos e recuperar seu dinheiro. Comece pelo passo 1 imediatamente.</p>
             </div>
-
         </section>
 
-        <section class="todo-conteudo">
+        <section id="grande-divisao" class="todo-conteudo">
+            <!-- Coluna da Esquerda -->
+            <section id="lista-cenarios" class="coluna-principal" aria-labelledby="titulo-cenarios">
+                <h2 id="titulo-cenarios" class="titulo-secundario">Qual situação aconteceu com você?</h2>
 
-            <div class="coluna-principal">
-
-                <article class="cartao-cenario">
-
-                    <div class="header-cartao">
-                        <h3 class="titulo-cartao">Se você fez um PIX</h3>
-                    </div>
-
-                    <div class="conteudo-cartao">
-                        <span class="numero-passo-vermelho">1</span>
-
-                        <div class="texto-passo">
-                            <h3 class="titulo-passo">
-                                Entre em contato com seu banco
-                                <span class="etiqueta-urgente">URGENTE</span>
-                            </h3>
-
-                            <p class="descricao-passo">
-                                Avise imediatamente que você foi vítima de um golpe e solicite o bloqueio ou devolução do PIX.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="conteudo-cartao">
-                        <span class="numero-passo-azul">2</span>
-
-                        <div class="texto-passo">
-                            <h3 class="titulo-passo">Registre a ocorrência</h3>
-
-                            <p class="descricao-passo">
-                                Faça um boletim de ocorrência e guarde todos os comprovantes da transação.
-                            </p>
-                        </div>
-                    </div>
-
+                <article id="cenario-1" class="cartao-cenario">
+                    <button type="button" id="header-cenario-1" class="header-cartao" aria-expanded="false">
+                        <span id="titulo-cenario-1" class="titulo-cartao">Passei dados bancários para desconhecidos</span>
+                        <span id="icone-cenario-1" class="icone-cartao" aria-hidden="true"></span>
+                    </button>
+                    <ol>
+                        <li id="corpo-cenario-1" class="conteudo-cartao">
+                            <div class="numero-passo-vermelho">1</div>
+                            <div class="texto-passo">
+                                <h4 id="titulo-passo-1" class="titulo-passo">Ligue imediatamente para seu banco <span class="etiqueta-urgente">URGENTE</span></h4>
+                                <p id="descricao-passo-1" class="descricao-passo">Use o número no verso do cartão ou o app oficial. Avise sobre a situação e peça para bloquearem sua conta e cartões.</p>
+                            </div>
+                        </li>
+                        <li id="corpo-cenario-2" class="conteudo-cartao">
+                            <div class="numero-passo-vermelho">2</div>
+                            <div class="texto-passo">
+                                <h4 id="titulo-passo-2" class="titulo-passo">Troque sua senha imediatamente <span class="etiqueta-urgente">URGENTE</span></h4>
+                                <p id="descricao-passo-2" class="descricao-passo">Acesse pelo app oficial e mude todas as senhas: internet banking, cartão e acesso ao app.</p>
+                            </div>
+                        </li>
+                        <li id="corpo-cenario-3" class="conteudo-cartao">
+                            <div class="numero-passo-azul">3</div>
+                            <div class="texto-passo">
+                                <h4 id="titulo-passo-3" class="titulo-passo">Registre um Boletim de Ocorrência</h4>
+                                <p id="descricao-passo-3" class="descricao-passo">Acesse a delegacia virtual do seu estado ou vá a uma delegacia. O B.O. é fundamental para recuperação de valores.</p>
+                            </div>
+                        </li>
+                        <li id="corpo-cenario-4" class="conteudo-cartao">
+                            <div class="numero-passo-azul">4</div>
+                            <div class="texto-passo">
+                                <h4 id="titulo-passo-4" class="titulo-passo">Monitore suas transações</h4>
+                                <p id="descricao-passo-4" class="descricao-passo">Fique de olho no extrato por alguns dias e conteste imediatamente qualquer cobrança desconhecida.</p>
+                            </div>
+                        </li>
+                    </ol>
                 </article>
 
-                <article class="cartao-cenario">
-
-                    <div class="header-cartao">
-                        <h3 class="titulo-cartao">Se sua conta foi invadida</h3>
-                    </div>
-
-                    <div class="conteudo-cartao">
-                        <span class="numero-passo-vermelho">1</span>
-
-                        <div class="texto-passo">
-                            <h3 class="titulo-passo">
-                                Troque suas senhas
-                                <span class="etiqueta-urgente">URGENTE</span>
-                            </h3>
-
-                            <p class="descricao-passo">
-                                Altere as senhas das contas afetadas usando um dispositivo seguro.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="conteudo-cartao">
-                        <span class="numero-passo-azul">2</span>
-
-                        <div class="texto-passo">
-                            <h3 class="titulo-passo">Ative a verificação em duas etapas</h3>
-
-                            <p class="descricao-passo">
-                                Ative a autenticação em dois fatores para aumentar a segurança das suas contas.
-                            </p>
-                        </div>
-                    </div>
-
+                <article id="cenario-2" class="cartao-cenario">
+                    <button type="button" id="header-cenario-2" class="header-cartao" aria-expanded="false">
+                        <span id="titulo-cenario-2" class="titulo-cartao">Minha conta do WhatsApp foi clonada</span>
+                        <span id="icone-cenario-2" class="icone-cartao" aria-hidden="true"></span>
+                    </button>
+                    <ol>
+                        <li id="corpo-2-cenario-1" class="conteudo-cartao">
+                            <div class="numero-passo-vermelho">1</div>
+                            <div class="texto-passo">
+                                <h4 id="titulo-2-passo-1" class="titulo-passo">Avise seus contatos imediatamente <span class="etiqueta-urgente">URGENTE</span></h4>
+                                <p id="descricao-2-passo-1" class="descricao-passo">Se possível por outro app, avise família e amigos que sua conta foi clonada e para não enviarem dinheiro.</p>
+                            </div>
+                        </li>
+                        <li id="corpo-2-cenario-2" class="conteudo-cartao">
+                            <div class="numero-passo-vermelho">2</div>
+                            <div class="texto-passo">
+                                <h4 id="titulo-2-passo-2" class="titulo-passo">Tente recuperar sua conta <span class="etiqueta-urgente">URGENTE</span></h4>
+                                <p id="descricao-2-passo-2" class="descricao-passo">Instale o WhatsApp com seu número. O app enviará um código SMS. Isso desconecta o invasor automaticamente.</p>
+                            </div>
+                        </li>
+                        <li id="corpo-2-cenario-3" class="conteudo-cartao">
+                            <div class="numero-passo-azul">3</div>
+                            <div class="texto-passo">
+                                <h4 id="titulo-2-passo-3" class="titulo-passo">Ative a verificação em duas etapas</h4>
+                                <p id="descricao-2-passo-3" class="descricao-passo">Em Configurações → Conta → Verificação em duas etapas. Crie um PIN de 6 dígitos que só você conhece.</p>
+                            </div>
+                        </li>
+                        <li id="corpo-2-cenario-4" class="conteudo-cartao">
+                            <div class="numero-passo-azul">4</div>
+                            <div class="texto-passo">
+                                <h4 id="titulo-2-passo-4" class="titulo-passo">Registre um Boletim de Ocorrência</h4>
+                                <p id="descricao-2-passo-4" class="descricao-passo">Acesse a delegacia virtual ou vá a uma delegacia presencialmente com os prints das conversas fraudulentas.</p>
+                            </div>
+                        </li>
+                    </ol>
                 </article>
 
-                <article class="cartao-cenario">
-
-                    <div class="header-cartao">
-                        <h3 class="titulo-cartao">Se clonaram seu WhatsApp</h3>
-                    </div>
-
-                    <div class="conteudo-cartao">
-                        <span class="numero-passo-vermelho">1</span>
-
-                        <div class="texto-passo">
-                            <h3 class="titulo-passo">
-                                Recupere sua conta
-                                <span class="etiqueta-urgente">URGENTE</span>
-                            </h3>
-
-                            <p class="descricao-passo">
-                                Tente registrar novamente seu número no WhatsApp para recuperar o acesso.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="conteudo-cartao">
-                        <span class="numero-passo-azul">2</span>
-
-                        <div class="texto-passo">
-                            <h3 class="titulo-passo">Avise seus contatos</h3>
-
-                            <p class="descricao-passo">
-                                Informe seus amigos e familiares para que não enviem dinheiro ou informações ao golpista.
-                            </p>
-                        </div>
-                    </div>
-
+                <article id="cenario-3" class="cartao-cenario">
+                    <button type="button" id="header-cenario-3" class="header-cartao" aria-expanded="false">
+                        <span id="titulo-cenario-3" class="titulo-cartao">Fiz um PIX para um golpista</span>
+                        <span id="icone-cenario-3" class="icone-cartao" aria-hidden="true"></span>
+                    </button>
+                    <ol>
+                        <li id="corpo-3-cenario-1" class="conteudo-cartao">
+                            <div class="numero-passo-vermelho">1</div>
+                            <div class="texto-passo">
+                                <h4 id="titulo-3-passo-1" class="titulo-passo">Ligue para seu banco imediatamente <span class="etiqueta-urgente">URGENTE</span></h4>
+                                <p id="descricao-3-passo-1" class="descricao-passo">Relate a situação e peça o cancelamento ou devolução. Quanto mais rápido, maiores as chances de recuperar.</p>
+                            </div>
+                        </li>
+                        <li id="corpo-3-cenario-2" class="conteudo-cartao">
+                            <div class="numero-passo-vermelho">2</div>
+                            <div class="texto-passo">
+                                <h4 id="titulo-3-passo-2" class="titulo-passo">Solicite o 'MED' (Mecanismo Especial de Devolução) <span class="etiqueta-urgente">URGENTE</span></h4>
+                                <p id="descricao-3-passo-2" class="descricao-passo">O Banco Central criou esse mecanismo para fraudes PIX. Seu banco pode acionar para tentar reaver o valor.</p>
+                            </div>
+                        </li>
+                        <li id="corpo-3-cenario-3" class="conteudo-cartao">
+                            <div class="numero-passo-azul">3</div>
+                            <div class="texto-passo">
+                                <h4 id="titulo-3-passo-3" class="titulo-passo">Registre um Boletim de Ocorrência</h4>
+                                <p id="descricao-3-passo-3" class="descricao-passo">Na delegacia virtual ou presencial. Guarde o comprovante de PIX, prints e qualquer dado do golpista.</p>
+                            </div>
+                        </li>
+                        <li id="corpo-3-cenario-4" class="conteudo-cartao">
+                            <div class="numero-passo-azul">4</div>
+                            <div class="texto-passo">
+                                <h4 id="titulo-3-passo-4" class="titulo-passo">Denuncie ao Banco Central</h4>
+                                <p id="descricao-3-passo-4" class="descricao-passo">Acesse registrato.bcb.gov.br para reportar golpes de PIX. Isso ajuda a investigação e futuras vítimas.</p>
+                            </div>
+                        </li>
+                    </ol>
                 </article>
 
-                <article class="cartao-cenario">
+                <article id="cenario-4" class="cartao-cenario">
+                    <button type="button" id="header-cenario-4" class="header-cartao" aria-expanded="false">
+                        <span id="titulo-cenario-4" class="titulo-cartao">Cliquei num link suspeito</span>
+                        <span id="icone-cenario-4" class="icone-cartao" aria-hidden="true"></span>
+                    </button>
+                    <ol>
+                        <li id="corpo-4-cenario-1" class="conteudo-cartao">
+                            <div class="numero-passo-vermelho">1</div>
+                            <div class="texto-passo">
+                                <h4 id="titulo-4-passo-1" class="titulo-passo">Não digite mais nenhum dado <span class="etiqueta-urgente">URGENTE</span></h4>
+                                <p id="descricao-4-passo-1" class="descricao-passo">Feche imediatamente o site ou aplicativo. Não preencha nenhum formulário, mesmo que pareça legítimo.</p>
+                            </div>
+                        </li>
+                        <li id="corpo-4-cenario-2" class="conteudo-cartao">
+                            <div class="numero-passo-vermelho">2</div>
+                            <div class="texto-passo">
+                                <h4 id="titulo-4-passo-2" class="titulo-passo">Troque as senhas das contas importantes <span class="etiqueta-urgente">URGENTE</span></h4>
+                                <p id="descricao-4-passo-2" class="descricao-passo">Priorize: banco, e-mail, WhatsApp e redes sociais. Use senhas diferentes para cada serviço.</p>
+                            </div>
+                        </li>
+                        <li id="corpo-4-cenario-3" class="conteudo-cartao">
+                            <div class="numero-passo-azul">3</div>
+                            <div class="texto-passo">
+                                <h4 id="titulo-4-passo-3" class="titulo-passo">Verifique se há aplicativos suspeitos instalados</h4>
+                                <p id="descricao-4-passo-3" class="descricao-passo">Em configurações do celular, veja os apps instalados recentemente. Desinstale qualquer coisa estranha.</p>
+                            </div>
+                        </li>
+                        <li id="corpo-4-cenario-4" class="conteudo-cartao">
+                            <div class="numero-passo-azul">4</div>
+                            <div class="texto-passo">
+                                <h4 id="titulo-4-passo-4" class="titulo-passo">Ative o antivírus</h4>
+                                <p id="descricao-4-passo-4" class="descricao-passo">Instale um antivírus confiável (Avast ou AVG são gratuitos) e faça uma varredura completa.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </article>
+            </section>
 
-                    <div class="header-cartao">
-                        <h3 class="titulo-cartao">Se forneceram seus dados pessoais</h3>
-                    </div>
+            <!-- Coluna da Direita -->
+            <aside id="painel-contatos" class="coluna-secundaria" aria-labelledby="titulo-contatos">
+                <h2 id="titulo-contatos" class="titulo-secundario">Contatos importantes</h2>
 
-                    <div class="conteudo-cartao">
-                        <span class="numero-passo-vermelho">1</span>
-
-                        <div class="texto-passo">
-                            <h3 class="titulo-passo">
-                                Avise seu banco
-                                <span class="etiqueta-urgente">URGENTE</span>
-                            </h3>
-
-                            <p class="descricao-passo">
-                                Informe o banco sobre o ocorrido e peça orientação para proteger sua conta.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="conteudo-cartao">
-                        <span class="numero-passo-azul">2</span>
-
-                        <div class="texto-passo">
-                            <h3 class="titulo-passo">Fique atento</h3>
-
-                            <p class="descricao-passo">
-                                Desconfie de ligações, mensagens e e-mails usando seus dados pessoais.
-                            </p>
-                        </div>
-                    </div>
-
+                <article id="contato-emergencia" class="cartao-contato">
+                    <h3 id="icone1" class="icone-contato" aria-hidden="true"></h3>
+                    <h4 id="titulo1" class="nome-contato">Emergências</h4>
+                    <p id="subtitulo1" class="subtitulo-contato">Polícia Militar</p>
+                    <p id="texto1" class="texto-contato">190</p>
                 </article>
 
-            </div>
-
-            <aside class="coluna-secundaria">
-
-                <h2 class="titulo-secundario">
-                    Contatos importantes
-                </h2>
-
-                <article class="cartao-contato">
-
-                    <h3 class="nome-contato">
-                        Seu banco
-                    </h3>
-
-                    <p class="subtitulo-contato">
-                        Entre em contato pelos canais oficiais.
-                    </p>
-
-                    <p class="texto-contato">
-                        Aplicativo ou telefone oficial
-                    </p>
-
+                <article id="contato-delegacia" class="cartao-contato">
+                    <h3 id="icone2" class="icone-contato" aria-hidden="true"></h3>
+                    <h4 id="titulo2" class="nome-contato">Delegacia Virtual SP</h4>
+                    <p id="subtitulo2" class="subtitulo-contato">B.O. online (São Paulo)</p>
+                    <p id="texto2" class="texto-contato">delegaciavirtual.ssp.sp.gov.br</p>
                 </article>
 
-                <article class="cartao-contato">
-
-                    <h3 class="nome-contato">
-                        Polícia
-                    </h3>
-
-                    <p class="subtitulo-contato">
-                        Para registrar uma ocorrência.
-                    </p>
-
-                    <p class="texto-contato">
-                        Delegacia / Delegacia Eletrônica
-                    </p>
-
+                <article id="contato-banco" class="cartao-contato">
+                    <h3 id="icone3" class="icone-contato" aria-hidden="true"></h3>
+                    <h4 id="titulo3" class="nome-contato">Banco Central</h4>
+                    <p id="subtitulo3" class="subtitulo-contato">Denúncias e reclamações</p>
+                    <p id="texto3" class="texto-contato">0800 979 2345</p>
                 </article>
 
-                <article class="cartao-contato">
-
-                    <h3 class="nome-contato">
-                        WhatsApp
-                    </h3>
-
-                    <p class="subtitulo-contato">
-                        Para recuperar uma conta.
-                    </p>
-
-                    <p class="texto-contato">
-                        Suporte oficial do WhatsApp
-                    </p>
-
-                </article>
-
-                <article class="cartao-contato">
-
-                    <h3 class="nome-contato">
-                        Segurança
-                    </h3>
-
-                    <p class="subtitulo-contato">
-                        Proteja suas contas e seus dados.
-                    </p>
-
-                    <p class="texto-contato">
-                        Troque suas senhas
-                    </p>
-
+                <article id="contato-safernet" class="cartao-contato">
+                    <h3 id="icone4" class="icone-contato" aria-hidden="true"></h3>
+                    <h4 id="titulo4" class="nome-contato">SaferNet Brasil</h4>
+                    <p id="subtitulo4" class="subtitulo-contato">Denúncia de crimes online</p>
+                    <p id="texto4" class="texto-contato">safernet.org.br</p>
                 </article>
 
                 <article id="campo-preto">
-
-                    <div id="coracao-amarelo"></div>
-
-                    <h3 id="titulo-coracao-amarelo">
-                        Você não está sozinho
-                    </h3>
-
-                    <p id="texto-coracao-amarelo">
-                        Golpes podem acontecer com qualquer pessoa. O importante é agir rapidamente e procurar ajuda.
-                    </p>
-
+                    <h3 id="coracao-amarelo" class="icone-contato" aria-hidden="true"></h3>
+                    <h2 id="titulo-coracao-amarelo" class="titulo-excecao">Não se culpe</h2>
+                    <p id="texto-coracao-amarelo" class="texto-excecao">Golpistas são profissionais. Qualquer pessoa pode ser vítima. O importante é agir rápido e aprender para se proteger no futuro.</p>
                 </article>
-
             </aside>
 
             <article id="big-box">
-
-                <div id="livros"></div>
-
-                <h2 id="titulo-link">
-                    Aprenda a evitar no futuro
-                </h2>
-
-                <p id="texto-link">
-                    Conheça os golpes mais comuns e saiba como identificá-los antes de cair.
-                </p>
-
-                <button id="botao-link" class="botao-link">
-                    Ver golpes comuns →
-                </button>
-
+                <h3 id="livros" class="icone-contato" aria-hidden="true"></h3>
+                <h2 id="titulo-link" class="titulo-excecao">Aprenda a evitar no futuro</h2>
+                <p id="texto-link" class="texto-excecao">Conheça os golpes mais comuns e saiba como identificá-los antes de cair.</p>
+                <button id="botao-link" class="botao-link" type="button">Ver golpes comuns →</button>
             </article>
-
         </section>
-
     </main>
 
-    <section class="final">
+    <footer>
+        <section class="final">
+            <article class="final1">
+                <h2>ConectaSeguro</h2>
+                <p>
+                    Educação digital para todos.
+                    Aprenda a se proteger e use a internet
+                    com mais confiança.
+                </p>
+            </article>
 
-        <div class="final1">
-            <h2>ConectaSeguro</h2>
-            <p>Informação para navegar com segurança.</p>
-        </div>
+            <article class="final2">
+                <h2>Páginas</h2>
+                <nav aria-label="Links do rodapé">
+                    <p><a href="pagina1.html">Golpes Comuns</a></p>
+                    <p><a href="pagina2.html">Senhas Seguras</a></p>
+                    <p><a href="pagina3.html">Quiz de Segurança</a></p>
+                    <p><a href="pagina4.html">O que fazer?</a></p>
+                </nav>
+            </article>
 
-        <div class="final2">
-            <h2>Links</h2>
-            <p>
-            <a href="pagina.html">Início</a><br>
-            </p>
-            <p>
-            <a href="pagina1.html">Golpes Comuns</a><br>
-            </p>
-            <p>
-            <a href="pagina2.html">Senhas Seguras</a><br>
-            </p>
-            <p>
-            <a href="pagina3.html">Quiz</a>
-            </p>
-        </div>
+            <article class="final3">
+                <h2>Precisa de ajuda?</h2>
+                <p>
+                    Em caso de golpe, entre em contato com sua
+                    operadora, banco ou a delegacia mais próxima.
+                    Não espere, aja rápido!
+                </p>
+            </article>
+        </section>
 
-        <div class="final3">
-            <h2>Ajuda</h2>
-            <a href="pagina4.html">O que fazer?</a>
-        </div>
-
-    </section>
-
-    <section class="Emergencia">
-        Emergência 190
-    </section>
-
-    <p class="copyright">
-        © 2026 ConectaSeguro — Projeto educacional de segurança digital. Não somos banco nem órgão governamental.
-    </p>
-
+        <p class="Emergencia">Emergência 190</p>
+    </footer>
 </body>
 </html>
