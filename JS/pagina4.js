@@ -74,7 +74,6 @@ botao4.addEventListener("click", function() {
 });
 
 
-// Botão "Ver golpes comuns"
 const botaoGolpes = document.getElementById("botao-link");
 
 botaoGolpes.addEventListener("click", function() {
