@@ -69,10 +69,10 @@ O projeto também mostrou como a tecnologia pode ser utilizada para compartilhar
 Com o Conecta Seguro, nós buscamos criar uma ferramenta simples e interativa que ajude os usuários a entender melhor os riscos presente que tem no ambiente digital e começar a ter cuidados básicos para usar a internet de forma mais segura.
 
 7. Integrantes:
-Nome	RA
-Rafael Henrique Woss	[10771377]
-Paulo Neto	[10780379]
-Pedro Morais da Silva	[10771425]
+Nome	
+Rafael Henrique Woss	
+Paulo Neto	
+Pedro Morais da Silva	
 
 Projeto Acadêmico
 Disciplina: Web Mobile
