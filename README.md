@@ -6,7 +6,7 @@ Este projeto é a continuação do Projeto 1 (feito em HTML, CSS e JS puro). Ago
 
 **Repositório:** https://github.com/Woss23/ConectaSeguro
 
-> **Status:** Check-in 1 (ideação e protótipo). Os próximos passos estão na seção [Roadmap](#roadmap).
+> **Status:** Check-in 2 (migração do HTML e CSS para Next.js). Os próximos passos estão na seção [Roadmap](#roadmap).
 
 ---
 
@@ -121,9 +121,72 @@ Com React isso muda:
 
 ---
 
+## Check-in 2: migração para Next.js
+
+Neste check-in pegamos o HTML e o CSS do Projeto 1 e passamos para um projeto Next.js (usando o **Pages Router**). O JavaScript do Projeto 1 (quiz, teste de senha e abas de "O que fazer") **ainda não foi migrado**: ele vira `useState`/`useEffect` no Check-in 3. Por isso, por enquanto, o quiz mostra as 4 perguntas ao mesmo tempo e o campo de senha ainda não avalia nada.
+
+### Estrutura do projeto
+
+```
+conectaseguro/
+├── components/
+│   ├── Header.js        menu do topo (igual em todas as páginas)
+│   ├── Footer.js        rodapé, emergência 190 e copyright
+│   └── Layout.js        junta Header + conteúdo + Footer e define o título
+├── pages/
+│   ├── _app.js          carrega o styles/globals.css
+│   ├── _document.js     define o idioma da página (pt-BR)
+│   ├── index.js         rota /
+│   ├── golpes.js        rota /golpes
+│   ├── senha.js         rota /senha
+│   ├── quiz.js          rota /quiz
+│   └── o-que-fazer.js   rota /o-que-fazer
+├── styles/
+│   ├── globals.css      CSS que vale para o site todo (menu, rodapé, body)
+│   └── *.module.css     um CSS Module para cada página
+├── next.config.js
+└── package.json
+```
+
+### Como cada página do Projeto 1 virou uma rota
+
+| Projeto 1 | Projeto 2 (Next.js) | CSS da página |
+|---|---|---|
+| `pagina.html` | `pages/index.js` (`/`) | `Home.module.css` |
+| `pagina1.html` | `pages/golpes.js` (`/golpes`) | `Golpes.module.css` |
+| `pagina2.html` | `pages/senha.js` (`/senha`) | `Senha.module.css` |
+| `pagina3.html` | `pages/quiz.js` (`/quiz`) | `Quiz.module.css` |
+| `pagina4.html` | `pages/o-que-fazer.js` (`/o-que-fazer`) | `OQueFazer.module.css` |
+
+### O que mudou do HTML para o JSX
+
+- `class` virou `className`, e `for` virou `htmlFor`.
+- Toda tag precisa fechar: `<br>` virou `<br />` e `<input>` virou `<input ... />`.
+- Os links `<a href="pagina1.html">` viraram `<Link href="/golpes">` (do `next/link`), para trocar de página sem recarregar tudo.
+- Aspas e apóstrofos dentro do texto viraram `&quot;` e `&apos;`.
+- O `<head>` de cada página virou o `<title>` dentro do `Layout`, usando `next/head`.
+- O menu e o rodapé, que eram copiados em cada HTML, agora existem uma vez só (`Header` e `Footer`).
+
+### O que mudou do CSS
+
+- O `global.css` virou `styles/globals.css` e é carregado uma vez no `_app.js`.
+- O CSS de cada página virou um **CSS Module**. Dentro dele, os estilos só valem para aquela página, então nomes iguais em páginas diferentes (como `.botao`) não se misturam.
+- Como o CSS Module não aceita seletor só de tag (como `main` ou `button`), demos classes a esses elementos. Exemplo: `main > section:first-child` virou `.introducao`.
+- Os nomes de classe com hífen (`caixa-quiz`) viraram camelCase (`caixaQuiz`), porque no JSX usamos `styles.caixaQuiz`.
+- As classes repetidas `.card1`, `.card2`, `.card3` e `.card4` viraram só `.card`.
+
+### Ajustes pequenos que fizemos na migração
+
+- Na página "O que fazer" e em "Golpes", os botões que só levavam a outra página viraram `<Link>` com o estilo de botão.
+- O quiz e a página "O que fazer" usavam menu e rodapé próprios (ou nenhum). Agora todas as páginas usam o mesmo `Header` e `Footer`.
+- Os ícones da página "O que fazer" estavam vazios no HTML do Projeto 1, então não foram migrados.
+- A área de resultado do teste de senha (`<p id="resultado">`) volta no Check-in 3, junto com o `useState`.
+
+---
+
 ## Tecnologias
 
-- Next.js
+- Next.js (Pages Router)
 - React (apenas `useState` e `useEffect`, sem Context API)
 - CSS Modules + `styles/globals.css` (sem Tailwind)
 - Git e GitHub
@@ -131,8 +194,6 @@ Com React isso muda:
 ---
 
 ## Como rodar
-
-> O projeto Next.js ainda está sendo criado (Check-in 2). Os passos abaixo serão os mesmos quando ele estiver pronto.
 
 ```bash
 git clone <link-do-repositorio>
@@ -147,21 +208,25 @@ Depois é só abrir `http://localhost:3000` no navegador.
 
 ## Uso de Inteligência Artificial
 
-Conforme exigido no enunciado, declaramos como usamos IA até agora:
+
 
 | Ferramenta | Para que usamos |
 |---|---|
-| Claude (Anthropic) | Ajuda na ideação, sugestão de como dividir o site em rotas e componentes, e geração das imagens dos wireframes a partir dos prints do site do Projeto 1 |
+| Claude (Anthropic) | Ideação, sugestão de como dividir o site em rotas e componentes, geração das imagens dos wireframes a partir dos prints do site do Projeto 1 e, no Check-in 2, apoio na conversão do HTML e CSS do Projeto 1 para JSX e CSS Modules |
 
 ---
 
 ## Roadmap
 
 - [x] **Check-in 1:** ideação e protótipo (wireframes)
-- [ ] **Check-in 2:** estrutura inicial em Next.js e migração do HTML/CSS
+- [x] **Check-in 2:** estrutura inicial em Next.js e migração do HTML/CSS
 - [ ] **Check-in 3:** conversão para componentes React e interatividade básica
 - [ ] **Check-in 4:** rotas simples e dinâmica
 - [ ] **Check-in 5:** rota de API pronta e consumo via `fetch`
 - [ ] **Entrega final:** README completo, projeto funcionando e apresentação
 - [ ] _(opcional)_ Deploy na Vercel
+
+
+
+
 
