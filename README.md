@@ -1,84 +1,167 @@
-Conecta Seguro
-Guia de Segurança Digital
-O Conecta Seguro é um site educativo desenvolvido com HTML5, CSS3 e JavaScript. A nossa ideia foi ajudar pessoas da comunidade a utilizarem a internet com mais segurança e a reconhecerem situações que podem representar algum risco.
-O site apresenta informações sobre problemas comuns no ambiente digital, como golpes, mensagens falsas, senhas inseguras e fraudes envolvendo PIX e WhatsApp.
+# ConectaSeguro (Projeto 2: Borboleta)
 
+Site de educação digital gratuita sobre **segurança na internet**. Aqui a gente ensina de um jeito simples como reconhecer golpes, criar senhas fortes e saber o que fazer quando algo dá errado.
 
-1. Processo de Ideação:
-Para começar o projeto, percebemos um problema comum: muitas pessoas usam a internet todos os dias, mas têm dificuldade para identificar golpes e proteger seus dados. Por isso, decidimos criar um site educativo sobre segurança digital, com informações simples, exemplos e ferramentas interativas. O nosso objetivo é ajudar os usuários a aprender mais sobre segurança e desenvolver hábitos para usarem a internet de maneira mais segura.
+Este projeto é a continuação do Projeto 1 (feito em HTML, CSS e JS puro). Agora estamos migrando tudo para **Next.js com React**.
 
-2. Protótipo Inicial:
-Antes de começarmos a programar, desenvolvemos um protótipo para fazermos a estrutura das páginas, a organização das informações e a forma como o usuário iria navegar pelo site.
-O protótipo foi desenvolvido utilizando o Figma, no seguinte formato:
+**Repositório:** https://github.com/Woss23/ConectaSeguro
 
-Tela inicial
- 
-Página de golpes
- 
-Página de senhas
- 
-Página do quiz
- 
-3. Caráter Extensionista:
-O projeto é extensionista porque usa conhecimentos da faculdade para ajudar a comunidade. O Conecta Seguro foi criado para pessoas que usam a internet e serviços digitais, mas podem ter dificuldade para identificar golpes e proteger seus dados. O site apresenta informações simples para ajudar os usuários a reconhecer golpes, criar senhas seguras, identificar mensagens suspeitas e ter mais cuidado com o PIX e outros serviços digitais.
+> **Status:** Check-in 1 (ideação e protótipo). Os próximos passos estão na seção [Roadmap](#roadmap).
 
-4. Tutorial do Código:
-Nesta parte, são apresentados alguns exemplos utilizados no desenvolvimento do site e uma explicação sobre como cada tecnologia foi utilizada.
+---
 
-4.1 Estrutura HTML:
-O HTML é responsável pela estrutura e pelo conteúdo das páginas.
-O elemento <header> representa o cabeçalho da página.
-Dentro dele, o <nav> reúne os links utilizados para navegar entre as páginas.
-O <main> representa o conteúdo principal da página e o <section> permite organizar esse conteúdo em diferentes partes.
-Os elementos <a> são utilizados para criar os links de navegação.
- 
-4.2 Estilização com CSS:
-O CSS é responsável pela parte visual do site.
-Por exemplo:
-button {
-    padding: 10px 20px
-    border-radius: 8px
-    cursor: pointer
-}
-Nesse exemplo, o padding define o espaço interno do botão.
-O border-radius modifica o formato das bordas, deixando-as arredondadas.
-Já o cursor: pointer faz com que o cursor do mouse mude quando o usuário passa sobre o botão.
+## Integrantes
 
-4.3 Interação com JavaScript:
-O JavaScript permite adicionar comportamentos ao site de acordo com as ações do usuário.
-Por exemplo:
-const botao = document.querySelector("#botao")
+| Nome completo | RA |
+|---|---|
+| Andre Elias Lemos Caputo | 10414551 |
+| Paulo Cezar | 10780379 |
+| Pedro Morais da Silva | 10771425 |
+| Rafael Henrique Woss | 10771377 |
 
-botao.addEventListener("click", function() {
-    alert("Cuidado! Nunca compartilhe sua senha.")
-});
-Primeiro, o querySelector() é utilizado para localizar o botão dentro do HTML.
-Depois, o addEventListener() é utilizado para identificar quando o usuário realiza uma determinada ação.
-Nesse exemplo, a ação é o clique no botão.
-Quando o botão é pressionado, uma mensagem aparece para o usuário.
-Esse tipo de interação deixa o site mais dinâmico e permite que o conteúdo responda às ações feitas pelo usuário.
+---
 
+## Ideação
 
-5. Aprendizados:
-O desenvolvimento do Conecta Seguro permitiu nos colocar em prática os conhecimentos aprendidos na disciplina, como HTML5, CSS3, Flexbox, JavaScript, layouts responsivos, organização de arquivos e uso do Git e GitHub. Além da parte técnica, o projeto mostrou a importância de pensar no usuário, criando um site simples, organizado e fácil de usar.
+### De onde veio a ideia?
 
-6. Conclusão:
-O desenvolvimento do Conecta Seguro permitiu unir os conhecimentos de HTML5, CSS3 e JavaScript com uma proposta voltada para a comunidade.
-Durante o projeto, foi possível perceber que desenvolver um site envolve mais do que escrever o código. Antes de começar a programação, foi necessário pensar bastante, como identificar um problema, pensar no público que vai utilizar o site, definir uma solução, criar um protótipo e planejar a organização das páginas.
-O projeto também mostrou como a tecnologia pode ser utilizada para compartilhar informações e ajudar as pessoas em situações que fazem parte do seu dia a dia.
-Com o Conecta Seguro, nós buscamos criar uma ferramenta simples e interativa que ajude os usuários a entender melhor os riscos presente que tem no ambiente digital e começar a ter cuidados básicos para usar a internet de forma mais segura.
+Todo mundo conhece alguém que já recebeu mensagem de golpe: "sua conta foi bloqueada", "mãe, troquei de número, me manda um PIX", "você ganhou um prêmio". Muita gente cai não por falta de inteligência, mas porque ninguém explicou como esses golpes funcionam.
 
-7. Integrantes:
-Nome	
-Rafael Henrique Woss	
-Paulo Neto	
-Pedro Morais da Silva	
+Pensamos então num site que explicasse isso **sem termos difíceis** e **sem cobrar nada**.
 
-Projeto Acadêmico
-Disciplina: Web Mobile
-Curso: Sistemas de Informação
-Instituição: Universidade Presbiteriana Mackenzie
-Projeto: Lagarta - Projeto Extensionista
-Ano: 2026
-Link GitHub:https://miniature-goggles-x554pg7qj97rf6qj.github.dev/
+### Qual problema queremos resolver?
+
+- Pessoas que não sabem identificar mensagens falsas.
+- Pessoas que usam senhas fracas (tipo `maria123`) sem saber que são fáceis de adivinhar.
+- Pessoas que, depois de cair num golpe, não sabem o que fazer primeiro (e o tempo importa muito).
+
+### O que o site tem?
+
+| Página | O que faz |
+|---|---|
+| Início | Apresenta o site e leva para os temas principais |
+| Golpes | Lista os golpes mais comuns, com exemplos de mensagens falsas |
+| Detalhe do golpe | Explica um golpe específico: como funciona, sinais de alerta e o que fazer |
+| Senhas | Campo para testar a força de uma senha e exemplos de senhas boas e ruins |
+| Quiz | Perguntas rápidas para testar o que a pessoa aprendeu |
+| O que fazer | Passo a passo para cada situação (PIX, WhatsApp clonado, link suspeito etc.) |
+| Sobre | Quem somos e por que o projeto existe |
+
+---
+
+## Parte extensionista
+
+**Público-alvo:** familiares, estudantes e pessoas mais velhas.
+
+**Como o site ajuda a comunidade:**
+
+- É gratuito e não pede cadastro.
+- Usa linguagem simples, sem "tecniquês".
+- Mostra exemplos reais de mensagens de golpe para a pessoa aprender a reconhecer.
+- Tem uma página só para emergências, com telefones e passos urgentes.
+
+**Como vamos levar até o público:** apresentação para grupos de pessoas, compartilhamento do link e coleta de feedbacks.
+
+>  O site é um projeto educacional. Não somos banco nem órgão do governo.
+
+---
+
+## Protótipos (wireframes)
+
+Os wireframes são de baixa fidelidade (só cinza, para focar na estrutura). Os retângulos **laranja tracejados** mostram os **componentes React** que vamos criar, e as anotações laranja indicam onde vamos usar `useState`, `useEffect` ou `fetch`.
+
+### Mapa de rotas e componentes
+![Mapa de componentes](wireframes/00-mapa-componentes.png)
+
+### Início (`/`)
+![Home](wireframes/01-home.png)
+
+### Lista de golpes (`/golpes`)
+![Lista de golpes](wireframes/02-golpes-lista.png)
+
+### Detalhe do golpe (`/golpes/[id]`)
+![Detalhe do golpe](wireframes/03-golpe-detalhe.png)
+
+### Teste de senha (`/senha`)
+![Senhas](wireframes/04-senhas.png)
+
+### Quiz (`/quiz`)
+![Quiz](wireframes/05-quiz.png)
+
+Tela de resultado (mesma rota, só muda o estado):
+
+![Resultado do quiz](wireframes/05b-quiz-resultado.png)
+
+### O que fazer (`/o-que-fazer`)
+![O que fazer](wireframes/06-o-que-fazer.png)
+
+### Sobre (`/sobre`)
+![Sobre](wireframes/07-sobre.png)
+
+### O que mudamos em relação ao Projeto 1?
+
+- **Golpes virou lista + detalhe.** Antes era uma página enorme com todos os golpes. Agora a lista fica em `/golpes` e cada golpe tem sua página em `/golpes/[id]`.
+- **"O que fazer" ficou com abas.** Antes todas as situações apareciam empilhadas. Agora a pessoa escolhe a situação e vê só aquele passo a passo.
+- **Criamos a página Sobre**, que faltava.
+- **Menu, rodapé e estilo iguais em todas as páginas.** No Projeto 1, a página "O que fazer" estava sem o estilo das outras.
+
+---
+
+## Por que migrar para React/Next.js?
+
+No Projeto 1 a gente copiava o mesmo menu e o mesmo rodapé em **cada arquivo HTML**. Se quiséssemos mudar uma palavra no rodapé, tínhamos que mexer em 5 arquivos.
+
+Com React isso muda:
+
+- **Componentes reutilizáveis:** criamos o `Header` e o `Footer` uma vez só e usamos em todas as páginas. O mesmo vale para o card de golpe, as opções do quiz etc.
+- **Estado (`useState`):** o quiz, o teste de senha e as abas de "O que fazer" mudam sozinhos na tela, sem a gente ficar buscando elementos no HTML com JavaScript puro.
+- **Rotas prontas no Next.js:** cada arquivo dentro da pasta de rotas vira uma página. Não precisa configurar nada.
+- **Rota dinâmica:** uma única página `/golpes/[id]` serve para todos os golpes. Antes teríamos que criar um HTML para cada um.
+- **API dentro do próprio projeto:** os dados dos golpes ficam num JSON e são entregues por uma rota de API, em vez de estarem escritos direto no HTML.
+
+---
+
+## Tecnologias
+
+- Next.js
+- React (apenas `useState` e `useEffect`, sem Context API)
+- CSS Modules + `styles/globals.css` (sem Tailwind)
+- Git e GitHub
+
+---
+
+## Como rodar
+
+> O projeto Next.js ainda está sendo criado (Check-in 2). Os passos abaixo serão os mesmos quando ele estiver pronto.
+
+```bash
+git clone <link-do-repositorio>
+cd <pasta-do-projeto>
+npm install
+npm run dev
+```
+
+Depois é só abrir `http://localhost:3000` no navegador.
+
+---
+
+## Uso de Inteligência Artificial
+
+Conforme exigido no enunciado, declaramos como usamos IA até agora:
+
+| Ferramenta | Para que usamos |
+|---|---|
+| Claude (Anthropic) | Ajuda na ideação, sugestão de como dividir o site em rotas e componentes, e geração das imagens dos wireframes a partir dos prints do site do Projeto 1 |
+
+---
+
+## Roadmap
+
+- [x] **Check-in 1:** ideação e protótipo (wireframes)
+- [ ] **Check-in 2:** estrutura inicial em Next.js e migração do HTML/CSS
+- [ ] **Check-in 3:** conversão para componentes React e interatividade básica
+- [ ] **Check-in 4:** rotas simples e dinâmica
+- [ ] **Check-in 5:** rota de API pronta e consumo via `fetch`
+- [ ] **Entrega final:** README completo, projeto funcionando e apresentação
+- [ ] _(opcional)_ Deploy na Vercel
 
