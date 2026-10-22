@@ -1,0 +1,94 @@
+/*
+Andre Elias Lemos Caputo - RA 10414551
+Paulo Cezar - RA 10780379
+Pedro Morais da Silva - RA 10771425
+Rafael Henrique Woss - RA 10771377
+*/
+
+.educacao {
+    color: #2563eb;
+    text-align: center;
+    margin: 30px;
+}
+
+.slogan {
+    text-align: center;
+    margin: 30px;
+}
+
+.slogan h1 {
+    font-size: 35px;
+}
+
+.slogan h2 {
+    font-size: 18px;
+    color: #64748b;
+}
+
+.botaoSecao {
+    text-align: center;
+    margin: 15px;
+}
+
+.botao {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.quadrados {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 40px;
+}
+
+.quadrados article {
+    background-color: #14213d;
+    color: #ffffff;
+    padding: 20px;
+    width: 200px;
+}
+
+.quadrados h2 {
+    color: #2563eb;
+}
+
+.porOnde {
+    text-align: center;
+    margin: 40px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    margin: 30px;
+}
+
+.card {
+    background-color: #eff6ff;
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #bfdbfe;
+    border-radius: 10px;
+}
+
+.cards a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.quizBanner {
+    text-align: center;
+    background-color: #14213d;
+    color: #ffffff;
+    margin: 40px;
+    padding: 30px;
+}
+
+.quizBanner a {
+    color: #2563eb;
+    text-decoration: none;
+}

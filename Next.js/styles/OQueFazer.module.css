@@ -1,0 +1,304 @@
+/*
+Andre Elias Lemos Caputo - RA 10414551
+Paulo Cezar - RA 10780379
+Pedro Morais da Silva - RA 10771425
+Rafael Henrique Woss - RA 10771377
+*/
+
+.conteudoDaPagina {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.faixaComentario {
+    display: inline-block;
+    background-color: #dbeafe;
+    color: #1d4ed8;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+
+.tituloPrimario {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #14213d;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+}
+
+.textoPrimario {
+    font-size: 1.1rem;
+    color: #64748b;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.chamadaUrgente {
+    background-color: #fef2f2;
+    border-left: 4px solid #dc2626;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.tituloChamada {
+    color: #dc2626;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.textoChamada {
+    color: #dc2626;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.todoConteudo {
+    display: grid;
+    grid-template-columns: 2.2fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.colunaPrincipal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tituloSecundario {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #14213d;
+    margin-bottom: 10px;
+}
+
+.cartaoCenario {
+    background-color: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    transition: box-shadow 0.2s ease;
+}
+
+.cartaoCenario:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.headerCartao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.tituloCartao {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #14213d;
+}
+
+.conteudoCartao {
+    display: flex;
+    gap: 15px;
+    padding: 16px;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.conteudoCartao:last-child {
+    margin-bottom: 0;
+}
+
+.numeroPassoVermelho,
+.numeroPassoAzul {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.numeroPassoVermelho {
+    background-color: #dc2626;
+}
+
+.numeroPassoAzul {
+    background-color: #2563eb;
+}
+
+.textoPasso {
+    flex: 1;
+}
+
+.tituloPasso {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #14213d;
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.etiquetaUrgente {
+    background-color: #dbeafe;
+    color: #dc2626;
+    font-size: 0.65rem;
+    padding: 3px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    margin-left: 6px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.descricaoPasso {
+    font-size: 0.85rem;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+.colunaSecundaria {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cartaoContato {
+    background-color: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.nomeContato {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #14213d;
+    margin-bottom: 4px;
+}
+
+.subtituloContato {
+    font-size: 0.8rem;
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+.textoContato {
+    background-color: #eff6ff;
+    color: #2563eb;
+    font-weight: 700;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    text-align: center;
+    word-break: break-all;
+}
+
+.campoPreto {
+    background-color: #14213d;
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.tituloCampoPreto {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.textoCampoPreto {
+    font-size: 0.85rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.bigBox {
+    grid-column: 1 / -1;
+    background-color: white;
+    border: 1px solid #bfdbfe;
+    border-radius: 16px;
+    padding: 50px 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tituloLink {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #14213d;
+    margin-bottom: 10px;
+}
+
+.textoLink {
+    color: #64748b;
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+}
+
+.botaoLink {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    font-family: inherit;
+}
+
+.botaoLink:hover {
+    background-color: #1d4ed8;
+}
+
+.botaoLink:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 992px) {
+    .todoConteudo {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .tituloPrimario {
+        font-size: 2rem;
+    }
+
+    .conteudoCartao {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .numeroPassoVermelho,
+    .numeroPassoAzul {
+        margin-top: 0;
+    }
+}

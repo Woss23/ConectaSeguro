@@ -1,0 +1,90 @@
+/*
+Andre Elias Lemos Caputo - RA 10414551
+Paulo Cezar - RA 10780379
+Pedro Morais da Silva - RA 10771425
+Rafael Henrique Woss - RA 10771377
+*/
+
+.principal {
+    padding: 40px 8%;
+}
+
+.introducao {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.introducao h3 {
+    color: #2563eb;
+    font-size: 16px;
+}
+
+.introducao h1 {
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.introducao p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.introducao h2 {
+    color: #1d4ed8;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 25px;
+}
+
+.golpe {
+    background-color: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 12px;
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 25px;
+}
+
+.golpe h3 {
+    color: #2563eb;
+    font-size: 14px;
+}
+
+.golpe h2 {
+    font-size: 23px;
+}
+
+.golpe p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.chamada {
+    text-align: center;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.chamada h2 {
+    font-size: 26px;
+}
+
+.chamada p {
+    font-size: 16px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 13px 25px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.botao:hover {
+    background-color: #1d4ed8;
+}

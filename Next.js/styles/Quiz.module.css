@@ -1,0 +1,64 @@
+/*
+Andre Elias Lemos Caputo - RA 10414551
+Paulo Cezar - RA 10780379
+Pedro Morais da Silva - RA 10771425
+Rafael Henrique Woss - RA 10771377
+*/
+
+.tituloQuiz {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 220px;
+}
+
+.perguntaNumero {
+    font-size: 30px;
+}
+
+.barra {
+    height: 8px;
+    background-color: #bfdbfe;
+    margin-bottom: 30px;
+}
+
+.caixaQuiz {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.pergunta {
+    margin-bottom: 25px;
+}
+
+.alternativa {
+    border: 1px solid #bfdbfe;
+    padding: 18px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+}
+
+.alternativa input {
+    margin-right: 10px;
+}
+
+.letra {
+    color: #2563eb;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.botao {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.botao:hover {
+    background-color: #1d4ed8;
+}
