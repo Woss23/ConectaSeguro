@@ -5,7 +5,38 @@
 
 import Link from "next/link";
 import Layout from "../components/Layout";
+import EstatisticaCard from "../components/EstatisticaCard";
+import CardTema from "../components/CardTema";
 import styles from "../styles/Home.module.css";
+
+const estatisticas = [
+  { numero: "3 em 5", texto: "brasileiros já receberam mensagem de golpe" },
+  { numero: "R$ 2,5 bi", texto: "perdidos em fraudes digitais em 2024" },
+  { numero: "70%", texto: "dos golpes acontecem por WhatsApp ou SMS" },
+];
+
+const temas = [
+  {
+    titulo: "Golpes",
+    texto: "Aprenda a reconhecer mensagens falsas e tentativas de fraude.",
+    href: "/golpes",
+  },
+  {
+    titulo: "Senhas",
+    texto: "Crie senhas fortes e proteja suas contas pessoais.",
+    href: "/senha",
+  },
+  {
+    titulo: "PIX",
+    texto: "Saiba como usar o PIX com segurança e evitar golpes.",
+    href: "/quiz",
+  },
+  {
+    titulo: "WhatsApp",
+    texto: "Proteja sua conta e identifique golpes pelo aplicativo.",
+    href: "/o-que-fazer",
+  },
+];
 
 export default function Home() {
   return (
@@ -27,28 +58,25 @@ export default function Home() {
       </section>
 
       <section className={styles.botaoSecao}>
-        <button className={styles.botao}>Aprenda a se proteger</button>
+        <Link href="/golpes" className={styles.botao}>
+          Aprenda a se proteger
+        </Link>
       </section>
 
       <section className={styles.botaoSecao}>
-        <button className={styles.botao}>Faça o Quiz</button>
+        <Link href="/quiz" className={styles.botao}>
+          Faça o Quiz
+        </Link>
       </section>
 
       <section className={styles.quadrados}>
-        <article>
-          <h2>3 em 5</h2>
-          <p>brasileiros já receberam mensagem de golpe</p>
-        </article>
-
-        <article>
-          <h2>R$ 2,5 bi</h2>
-          <p>perdidos em fraudes digitais em 2024</p>
-        </article>
-
-        <article>
-          <h2>70%</h2>
-          <p>dos golpes acontecem por WhatsApp ou SMS</p>
-        </article>
+        {estatisticas.map((estatistica) => (
+          <EstatisticaCard
+            key={estatistica.numero}
+            numero={estatistica.numero}
+            texto={estatistica.texto}
+          />
+        ))}
       </section>
 
       <section className={styles.porOnde}>
@@ -61,29 +89,14 @@ export default function Home() {
       </section>
 
       <section className={styles.cards}>
-        <article className={styles.card}>
-          <h2>Golpes</h2>
-          <p>Aprenda a reconhecer mensagens falsas e tentativas de fraude.</p>
-          <Link href="/golpes">Saiba mais →</Link>
-        </article>
-
-        <article className={styles.card}>
-          <h2>Senhas</h2>
-          <p>Crie senhas fortes e proteja suas contas pessoais.</p>
-          <Link href="/senha">Saiba mais →</Link>
-        </article>
-
-        <article className={styles.card}>
-          <h2>PIX</h2>
-          <p>Saiba como usar o PIX com segurança e evitar golpes.</p>
-          <Link href="/quiz">Saiba mais →</Link>
-        </article>
-
-        <article className={styles.card}>
-          <h2>WhatsApp</h2>
-          <p>Proteja sua conta e identifique golpes pelo aplicativo.</p>
-          <Link href="/o-que-fazer">Saiba mais →</Link>
-        </article>
+        {temas.map((tema) => (
+          <CardTema
+            key={tema.titulo}
+            titulo={tema.titulo}
+            texto={tema.texto}
+            href={tema.href}
+          />
+        ))}
       </section>
 
       <section className={styles.quizBanner}>
