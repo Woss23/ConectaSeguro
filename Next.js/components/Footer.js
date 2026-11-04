@@ -48,8 +48,7 @@ export default function Footer() {
       <section className="Emergencia">Emergência 190</section>
 
       <p className="copyright">
-        © 2026 ConectaSeguro — Projeto educacional de segurança digital. Não
-        somos banco nem órgão governamental.
+        © 2026 ConectaSeguro — Projeto educacional de segurança digital.
       </p>
     </footer>
   );
