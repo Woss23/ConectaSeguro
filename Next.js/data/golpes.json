@@ -1,0 +1,154 @@
+[
+  {
+    "id": "phishing",
+    "rotulo": "Golpe comum",
+    "titulo": "Phishing, link falso",
+    "descricao": "Mensagens falsas que parecem ser de bancos, lojas ou governo. O objetivo é fazer você clicar num link e digitar seus dados",
+    "exemplo": "\"BANCO DIGITAL: Sua conta foi BLOQUEADA por segurança. Clique agora para reativar: bit.ly/banco-reativa\"",
+    "sinaisDeAlerta": [
+      "A mensagem cria pânico, como conta bloqueada ou compra não reconhecida",
+      "O link é encurtado ou o endereço do site tem erros de escrita",
+      "Pede senha, código ou dados do cartão por mensagem"
+    ],
+    "oQueFazer": [
+      {
+        "titulo": "Não clique no link",
+        "descricao": "Apague a mensagem. Se já clicou, não digite nenhum dado na página que abriu."
+      },
+      {
+        "titulo": "Confira pelo canal oficial",
+        "descricao": "Abra o app do banco ou ligue para o número que está no verso do cartão para saber se existe algum problema de verdade."
+      },
+      {
+        "titulo": "Troque suas senhas",
+        "descricao": "Se chegou a informar dados, troque as senhas pelo app oficial e avise o banco na hora."
+      }
+    ]
+  },
+  {
+    "id": "golpe-do-pix",
+    "rotulo": "Golpe comum",
+    "titulo": "Golpe do Pix",
+    "descricao": "Criminosos criam situações de urgência para fazer você transferir dinheiro via PIX. Uma vez enviado, o dinheiro é muito difícil de recuperar.",
+    "exemplo": "\"Oi mãe, troquei de número. Estou com uma emergência urgente e preciso de R$800 agora. Me manda PIX! Te explico depois.\"",
+    "sinaisDeAlerta": [
+      "A pessoa diz que trocou de número e pede dinheiro logo em seguida",
+      "Existe muita urgência e a pessoa não quer ligar nem mandar áudio",
+      "O nome do dono da conta Pix não é o da pessoa que diz estar pedindo"
+    ],
+    "oQueFazer": [
+      {
+        "titulo": "Confirme por outro meio",
+        "descricao": "Ligue para o número antigo ou fale com outra pessoa da família antes de enviar qualquer valor."
+      },
+      {
+        "titulo": "Já enviou? Acione o banco",
+        "descricao": "Ligue para o banco imediatamente e peça a devolução pelo Mecanismo Especial de Devolução (MED)."
+      },
+      {
+        "titulo": "Registre um Boletim de Ocorrência",
+        "descricao": "Use a delegacia virtual do seu estado. O B.O. ajuda na recuperação do valor."
+      }
+    ]
+  },
+  {
+    "id": "clonagem-de-whatsapp",
+    "titulo": "Clonagem de WhatsApp",
+    "descricao": "O criminoso assume sua conta do WhatsApp e usa para pedir dinheiro aos seus contatos fingindo ser você.",
+    "exemplo": "\"Você recebe: 'Olá, sou da operadora. Para confirmar seu cadastro, nos informe o código que você recebeu por SMS.' — Esse código é o de verificação do WhatsApp!\"",
+    "sinaisDeAlerta": [
+      "Alguém que você não conhece pede um código recebido por SMS",
+      "Seus contatos recebem pedidos de dinheiro vindos do seu número",
+      "O WhatsApp sai do seu celular sem você ter feito nada"
+    ],
+    "oQueFazer": [
+      {
+        "titulo": "Nunca passe o código",
+        "descricao": "O código de verificação é pessoal. Nenhuma empresa precisa dele para confirmar cadastro."
+      },
+      {
+        "titulo": "Recupere a conta",
+        "descricao": "Instale o WhatsApp de novo, informe seu número e digite o código que chegar por SMS."
+      },
+      {
+        "titulo": "Avise seus contatos",
+        "descricao": "Conte a todos que seu número foi clonado para ninguém enviar dinheiro. Ative a verificação em duas etapas."
+      }
+    ]
+  },
+  {
+    "id": "falsos-premios",
+    "titulo": "Falsos prêmios e concursos",
+    "descricao": "Mensagens dizendo que você ganhou prêmios, mas para receber é preciso pagar uma \"taxa\" ou fornecer dados pessoais.",
+    "exemplo": "\"PARABÉNS! Você foi sorteado e ganhou um iPhone 15! Para liberar o prêmio, pague a taxa de R$49,90 de seguro no link abaixo.\"",
+    "sinaisDeAlerta": [
+      "Você ganhou um prêmio de um sorteio em que nunca participou",
+      "Pedem pagamento de taxa para liberar o prêmio",
+      "A mensagem tem pressa e um link desconhecido"
+    ],
+    "oQueFazer": [
+      {
+        "titulo": "Ignore e apague",
+        "descricao": "Prêmio de verdade não exige pagamento antecipado. Não responda nem clique em nada."
+      },
+      {
+        "titulo": "Denuncie o contato",
+        "descricao": "Bloqueie o número e denuncie a conta no próprio aplicativo de mensagens."
+      },
+      {
+        "titulo": "Pagou a taxa?",
+        "descricao": "Procure o banco para contestar o pagamento e registre um Boletim de Ocorrência."
+      }
+    ]
+  },
+  {
+    "id": "falsa-oferta-de-emprego",
+    "titulo": "Falsa Oferta de Emprego",
+    "descricao": "Vagas de emprego falsas que pedem documentos pessoais ou solicitam pagamento de taxas de cadastro.",
+    "exemplo": "\"VAGA URGENTE — Trabalhe em casa e ganhe R$3.000/mês sem experiência. Envie CPF, RG e foto do documento para confirmar seu cadastro.\"",
+    "sinaisDeAlerta": [
+      "Salário muito alto para uma vaga sem experiência",
+      "Pedem CPF, RG e foto do documento logo no primeiro contato",
+      "Cobram taxa de cadastro, curso ou material para começar"
+    ],
+    "oQueFazer": [
+      {
+        "titulo": "Pesquise a empresa",
+        "descricao": "Procure o site oficial e os canais de contato da empresa para ver se a vaga existe de verdade."
+      },
+      {
+        "titulo": "Não envie documentos",
+        "descricao": "Documentos só devem ser enviados depois de confirmar a empresa e em um processo seletivo real."
+      },
+      {
+        "titulo": "Já enviou os dados?",
+        "descricao": "Fique atento a cobranças e empréstimos em seu nome e registre um Boletim de Ocorrência."
+      }
+    ]
+  },
+  {
+    "id": "falso-suporte-tecnico",
+    "titulo": "Falso Suporte Técnico",
+    "descricao": "Criminosos ligam fingindo ser da Microsoft, antivírus ou operadora dizendo que seu computador está com vírus.",
+    "exemplo": "\"Ligação: 'Aqui é do suporte da Microsoft. Detectamos um vírus grave no seu computador. Precisamos de acesso remoto agora para resolver.'\"",
+    "sinaisDeAlerta": [
+      "Uma empresa liga sem você ter pedido ajuda",
+      "Pedem acesso remoto ao seu computador ou celular",
+      "Dizem que existe um vírus grave e exigem pagamento para resolver"
+    ],
+    "oQueFazer": [
+      {
+        "titulo": "Desligue a ligação",
+        "descricao": "Empresas sérias não ligam avisando de vírus. Não instale nenhum programa que pedirem."
+      },
+      {
+        "titulo": "Já deu acesso? Desconecte",
+        "descricao": "Desligue o computador da internet, encerre o programa de acesso remoto e rode um antivírus confiável."
+      },
+      {
+        "titulo": "Troque as senhas",
+        "descricao": "Mude as senhas de e-mail e banco usando outro aparelho e avise o banco se informou dados."
+      }
+    ]
+  }
+]

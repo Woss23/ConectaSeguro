@@ -3,13 +3,35 @@
 // Pedro Morais da Silva - RA 10771425
 // Rafael Henrique Woss - RA 10771377
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Layout from "../components/Layout";
 import GolpeCard from "../components/GolpeCard";
-import { golpes } from "../data/golpes";
 import styles from "../styles/Golpes.module.css";
 
 export default function Golpes() {
+  const [golpes, setGolpes] = useState([]);
+  const [carregando, setCarregando] = useState(true);
+  const [erro, setErro] = useState(false);
+
+  useEffect(() => {
+    fetch("/api/golpes")
+      .then((resposta) => {
+        if (!resposta.ok) {
+          throw new Error();
+        }
+        return resposta.json();
+      })
+      .then((dados) => {
+        setGolpes(dados);
+        setCarregando(false);
+      })
+      .catch(() => {
+        setErro(true);
+        setCarregando(false);
+      });
+  }, []);
+
   return (
     <Layout titulo="Golpes Comuns">
       <main className={styles.principal}>
@@ -30,9 +52,18 @@ export default function Golpes() {
           </h2>
         </section>
 
+        {carregando && <p className={styles.aviso}>Carregando golpes...</p>}
+
+        {erro && (
+          <p className={styles.aviso}>
+            Não foi possível carregar os golpes. Tente novamente mais tarde.
+          </p>
+        )}
+
         {golpes.map((golpe) => (
           <GolpeCard
             key={golpe.id}
+            id={golpe.id}
             rotulo={golpe.rotulo}
             titulo={golpe.titulo}
             descricao={golpe.descricao}
